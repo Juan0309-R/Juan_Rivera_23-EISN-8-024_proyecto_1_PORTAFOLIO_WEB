@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.navbar {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.jumbotron {
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.animated-name {
+    animation: nameAnimation 2s infinite;
+}
+
+@keyframes nameAnimation {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.project-card, .experience-card {
+    border: 2px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+}
+
+.project-card:hover, .experience-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+.dark-mode .jumbotron {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+}
+
+.dark-mode .card {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+.dark-mode .btn-primary {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #357ebd;
+    border-color: #357ebd;
+}
